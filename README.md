@@ -1,56 +1,21 @@
-**ocs01-test**
+Benchmark Results — OCS01 Test
 
-rust cli for testing ocs01 smart contract
+🧪 OCS01 Benchmark 1
 
-**what it does**
+Total TX: 60
 
--   tests all ocs01 contract methods
--   interactive menu for easy navigation
--   shows results instantly for view methods
--   handles tx signing for call methods
+Total duration: 3794s
 
-**works on**
+SHA-256: 4cb429ded6b6e8cef4da7fb0aa4af65478768dcd149fbbe90495c2d0df6cff32
 
--   linux
--   macos
--   windows
+🧪 OCS01 Benchmark 2
 
-**install rust (if not installed)**
+Total TX: 200
 
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-```
+Total duration: 2157s
 
-**build from source**
+SHA-256: d0ad6bd8ee9a1f9e338238db0eaed1cfe8d0543c29ce26bc6d4182e4f66158cb
 
-```bash
-git clone https://github.com/octra-labs/ocs01-test.git
-cd ocs01-test
-cargo build --release
-```
 
-**setup**
+Wallet: octBrZfuk1BA2xVnsgGjABVAe7adH4V3ozfF77YLPzpjAjW
 
-```bash
-# copy contract interface
-cp EI/exec_interface.json .
-```
-
-**required files in same directory**
-
--   wallet.json - create with your credentials
--   exec_interface.json - copy from EI/ folder
-
-**run**
-
-you must copy the release binary to your cli folder and also copy the EI file (execution interface file) to the same location 
-
-the release binary is located in this folder after successful build. 
-```bash
-./target/release/ocs01-test
-```
-
-*for this task the ei file contains the interface for contract at address octBUHw585BrAMPMLQvGuWx4vqEsybYH9N7a3WNj1WBwrDn, do not modify it*
-
-after running, follow the menu to interact with the contract
